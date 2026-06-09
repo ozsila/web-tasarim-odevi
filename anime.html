@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    if (document.referrer === "") {
+        window.location.href = "login.html"; 
+    }
+</script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>Anime Wanted Arşiv</title>
+
+<style>
+body{
+    background:#0b0b0b;
+    font-family:Arial;
+    color:white;
+}
+
+h1{
+    text-align:center;
+    margin-top:20px;
+}
+
+/* GALERİ */
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+    padding:30px;
+}
+
+/* POSTER */
+.poster{
+    width:260px;
+    position:relative;
+    border:6px solid #111;
+
+    box-shadow:
+        0 0 0 6px #5a3b1e,
+        0 0 0 12px #2b1a0d,
+        0 15px 30px rgba(0,0,0,0.8),
+        inset 0 0 25px rgba(0,0,0,0.3);
+
+    border-radius:8px;
+
+    background:#f2e2b3;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.poster:hover{
+    transform:scale(1.05) rotate(-1deg);
+}
+
+.poster::after{
+    content:"WANTED";
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:red;
+    color:white;
+    font-weight:bold;
+    padding:5px 8px;
+    font-size:12px;
+    transform:rotate(10deg);
+}
+
+.poster-title{
+    background:#5a3b1e;
+    color:white;
+    text-align:center;
+    padding:8px;
+    font-weight:bold;
+}
+
+.poster img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.poster-desc{
+    padding:10px;
+    text-align:center;
+    color:#2b1b0e;
+    font-weight:bold;
+    border-top:2px dashed #5a3b1e;
+}
+
+/* MÜZİK */
+#startMusic{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    padding:12px 18px;
+    background:#5a3b1e;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h1>ANIME WANTED ARŞİVİ</h1>
+
+<div class="music">
+    <audio controls autoplay loop>
+        <source src="animeses.mp3" type="audio/mpeg">
+    </audio>
+</div>
+<script>
+const music = document.getElementById("bgmusic");
+const btn = document.getElementById("startMusic");
+
+btn.addEventListener("click", () => {
+    music.play();
+    btn.style.display = "none";
+});
+</script>
+
+<div class="gallery">
+
+    <!-- 1 -->
+    <div class="poster"><div class="poster-title">FATE</div><img src="anime1.jpg"><div class="poster-desc">ASTOLFO</div></div>
+
+    <!-- 2 -->
+    <div class="poster"><div class="poster-title">NARUTO</div><img src="anime2.jpg"><div class="poster-desc">JIRAIYA</div></div>
+
+    <!-- 3 -->
+    <div class="poster"><div class="poster-title">BLEACH</div><img src="anime3.jpg"><div class="poster-desc">KON</div></div>
+
+    <!-- 4 -->
+    <div class="poster"><div class="poster-title">DRAGON BALL</div><img src="anime4.jpg"><div class="poster-desc">MUTEN ROSHI</div></div>
+
+    <!-- 5 -->
+    <div class="poster"><div class="poster-title">ONE PIECE</div><img src="anime5.jpg"><div class="poster-desc">BROOK</div></div>
+
+    <!-- 6 -->
+    <div class="poster"><div class="poster-title">REDO HEALER</div><img src="anime6.jpg"><div class="poster-desc">KEYARGA</div></div>
+
+    <!-- 7 -->
+    <div class="poster"><div class="poster-title">SOLO LEVELING</div><img src="anime7.jpg"><div class="poster-desc">JIN-WOO</div></div>
+
+    <!-- 8 -->
+    <div class="poster"><div class="poster-title">SHADOW</div><img src="anime8.jpg"><div class="poster-desc">CID</div></div>
+
+    <!-- 9 -->
+    <div class="poster"><div class="poster-title">OVERLORD</div><img src="anime9.jpg"><div class="poster-desc">AINZ</div></div>
+
+    <!-- 10 -->
+    <div class="poster"><div class="poster-title">ANOTHER</div><img src="anime10.jpg"><div class="poster-desc">MEI</div></div>
+
+    <!-- 11 -->
+    <div class="poster"><div class="poster-title">DEATH NOTE</div><img src="anime11.jpg"><div class="poster-desc">LIGHT</div></div>
+
+    <!-- 12 -->
+    <div class="poster"><div class="poster-title">FRIEREN</div><img src="anime12.jpg"><div class="poster-desc">FRIEREN</div></div>
+
+    <!-- 13 -->
+    <div class="poster"><div class="poster-title">TENSEI SHITARA</div><img src="anime13.jpg"><div class="poster-desc">RIMURU</div></div>
+
+    <!-- 14 -->
+    <div class="poster"><div class="poster-title">KONOSUBA</div><img src="anime14.jpg"><div class="poster-desc">MEGUMIN</div></div>
+
+    <!-- 15 -->
+    <div class="poster"><div class="poster-title">BLACK CLOVER</div><img src="anime15.jpg"><div class="poster-desc">ASTA</div></div>
+
+    <!-- 16 -->
+    <div class="poster"><div class="poster-title">ELITE</div><img src="anime16.jpg"><div class="poster-desc">AYANOKOJI</div></div>
+
+    <!-- 17 -->
+    <div class="poster"><div class="poster-title">BLUE LOCK</div><img src="anime17.jpg"><div class="poster-desc">NAGI</div></div>
+
+    <!-- 18 -->
+    <div class="poster"><div class="poster-title">BAKI</div><img src="anime18.jpg"><div class="poster-desc">YUJIRO</div></div>
+
+    <!-- 19 -->
+    <div class="poster"><div class="poster-title">JJK</div><img src="anime19.jpg"><div class="poster-desc">SUKUNA</div></div>
+
+    <!-- 20 -->
+    <div class="poster"><div class="poster-title">ARIFURETA</div><img src="anime20.jpg"><div class="poster-desc">HAJIME</div></div>
+
+    <!-- 21 -->
+    <div class="poster"><div class="poster-title">TOKYO GHOUL</div><img src="anime21.jpg"><div class="poster-desc">KANEKI</div></div>
+
+    <!-- 22 -->
+    <div class="poster"><div class="poster-title">BLACK BUTLER</div><img src="anime22.jpg"><div class="poster-desc">SEBASTIAN</div></div>
+
+    <!-- 23 -->
+    <div class="poster"><div class="poster-title">ANGELS DEATH</div><img src="anime23.jpg"><div class="poster-desc">ISAAC</div></div>
+
+    <!-- 24 -->
+    <div class="poster"><div class="poster-title">DXD</div><img src="anime24.jpg"><div class="poster-desc">RIAS</div></div>
+
+    <!-- 25 -->
+    <div class="poster"><div class="poster-title">FMA</div><img src="anime25.jpg"><div class="poster-desc">ROY</div></div>
+
+    <!-- 26 -->
+    <div class="poster"><div class="poster-title">RE ZERO</div><img src="anime26.jpg"><div class="poster-desc">SUBARU</div></div>
+
+    <!-- 27 -->
+    <div class="poster"><div class="poster-title">YOUJO SENKI</div><img src="anime27.jpg"><div class="poster-desc">TANYA</div></div>
+
+    <!-- 28 -->
+    <div class="poster"><div class="poster-title">MAOU 2099</div><img src="anime28.png"><div class="poster-desc">TAKAHASHI</div></div>
+
+    <!-- 29 -->
+    <div class="poster"><div class="poster-title">MUSHOKU TENSEI</div><img src="anime29.jpg"><div class="poster-desc">RUDY</div></div>
+
+    <!-- 30 -->
+    <div class="poster"><div class="poster-title">DORORO</div><img src="anime30.jpg"><div class="poster-desc">HYAKKIMARU</div></div>
+
+</div>
+
+</body>
+</html>

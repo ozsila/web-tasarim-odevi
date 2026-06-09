@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildlife Photography</title>
+    <script>
+    if (document.referrer === "") {
+        window.location.href = "login.html"; 
+    }
+</script>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Papyrus, fantasy;
+    color:white;
+    background:#312e81;
+    min-height:100vh;
+}
+
+/* ÜST ALAN */
+
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    letter-spacing:4px;
+    color:white;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    color:#dbeafe;
+}
+
+/* GALERİ */
+
+.gallery{
+    column-count:4;
+    column-gap:20px;
+    padding:30px;
+}
+
+/* FOTOĞRAF KARTLARI */
+
+.card{
+    break-inside:avoid;
+    margin-bottom:20px;
+
+    background:rgba(20,20,40,0.9);
+
+    border:2px solid #93c5fd;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.7);
+}
+
+.card img{
+    width:100%;
+    display:block;
+    transition:0.3s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+/* YAZILAR */
+
+.caption{
+    padding:15px;
+}
+
+.caption h3{
+    color:#93c5fd;
+    margin-bottom:8px;
+}
+
+.caption p{
+    color:#dbeafe;
+    line-height:1.5;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#1e1b4b;
+    margin-top:30px;
+}
+
+/* MOBİL */
+
+@media(max-width:992px){
+    .gallery{
+        column-count:3;
+    }
+}
+
+@media(max-width:768px){
+    .gallery{
+        column-count:2;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+}
+
+@media(max-width:576px){
+    .gallery{
+        column-count:1;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+    <h1>WILDLIFE PHOTOGRAPHY</h1>
+    <p>Doğanın en etkileyici canlılarını keşfedin</p>
+</section>
+
+<section class="gallery">
+
+    <div class="card">
+        <img src="hayvan1.webp" alt="Aslan">
+        <div class="caption">
+            <h3>Kakadu</h3>
+            <p>Cacatuoidea üst familyasındaki tek familya olan Cacatuidae familyasına ait 21 papağan türünden herhangi biridir.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan2.jpg" alt="Kartal">
+        <div class="caption">
+            <h3>Meksika Kral Yılanı</h3>
+            <p>Tamamen parlak siyah rengiyle bilinen, zehirsiz, uysal bir yılan türüdür. Kemirgenler ve diğer yılanlarla beslenirler. </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan3.jpeg" alt="Kaplan">
+        <div class="caption">
+            <h3>Kelaynak</h3>
+            <p>Başlarında tüy bulunmayan, parlak siyah tüylere ve uzun, kıvrık gagalara sahip göçmen kuşlardır ve ülkemizde koruma altındadırlar.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan3.jpg" alt="Kurt">
+        <div class="caption">
+            <h3>Timsah Kapan Kaplumbağası</h3>
+            <p>Kuzey Amerika'nın tatlı sularında yaşayan, adını sivri dikenli kabuğundan ve timsahı andıran güçlü çenesinden alan dünyanın en büyük tatlı su kaplumbağalarından biridir.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan4.jpeg" alt="Tilki">
+        <div class="caption">
+            <h3>Zehirli ok Kurbağası</h3>
+            <p>Dünyanın en zehirli canlılarından biridir. Boyları 2.5 ile 6 cm arasında değişen bu canlılar, yedikleri zehirli böcekler sayesinde zehir üretir ve bu zehri derilerinde depolar.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan5.jpeg" alt="Ayı">
+        <div class="caption">
+            <h3>Top Pitonu</h3>
+            <p>Tehlike anında kendini sıkı bir top şekline sokmasıyla bilinir.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan6.jpeg" alt="Geyik">
+        <div class="caption">
+            <h3>Sinek Kuşu</h3>
+            <p>Dünyanın en küçük kuşlarıdır. Kanatlarını saniyede 80 defaya kadar çok hızlı çırpabilmeleri sayesinde havada asılı kalabilir ve geriye doğru uçabilirler.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan7.jpeg" alt="Baykuş">
+        <div class="caption">
+            <h3>Gecko</h3>
+            <p>Yeni Kaledonya kökenlidir. Gözlerinin üstündeki kirpiksi yapıları ve cama bile tırmanmalarını sağlayan vantuzlu ayaklarıyla tanınırlar.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="hayvan8.jpg" alt="Aslan">
+        <div class="caption">
+            <h3>Kapibara</h3>
+            <p>Güney Amerika'ya özgü, dünyanın yaşayan en büyük kemirgenleridir. Sakin ve arkadaş canlısı yapılarıyla tanınan yarı sucul memelilerdir.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan9.jpeg" alt="Peters Çizgili Kertenkele">
+        <div class="caption">
+            <h3>Peters Çizgili Kertenkele</h3>
+            <p>Peter's banded skink veya Peters kaya agaması), sürüngen dünyasında kendine has fiziksel özellikleri ve bakımıyla bilinen egzotik bir kertenkele türüdür. </p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan10.jpg" alt="Kaplan">
+        <div class="caption">
+            <h3>Yılanbaş Balığı</h3>
+            <p>Su dışında da hava soluyabilen, karada kısa mesafeler hareket edebilen ve sudaki diğer canlıları avlayan, oldukça dayanıklı, yırtıcı bir tatlı su balığıdır.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="hayvan11.jpg" alt="Kurt">
+        <div class="caption">
+            <h3>Kakabo(Gece Papağanı)</h3>
+            <p>Avustralya'nın kurak iç kesimlerinde yaşayan, gündüzleri çalılıkların arasında saklanan ve geceleri aktif olan son derece nadir ve gizemli bir kuş türüdür. Yüzyıldan uzun süre neslinin tükendiği sanılmış, ancak yakın yıllarda yeniden görüntülenerek varlığı kanıtlanmıştır.</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="hayvan12.jpg" alt="Kurt">
+        <div class="caption">
+            <h3>Kırmızı Gözlü Ağaç Kurbağası</h3>
+            <p> Parlak renkleriyle bilinen, Orta Amerika yağmur ormanlarına özgü, ağaçlarda yaşayan gececil bir amfibidir. Göz alıcı görünümüne rağmen zehirli değildirler.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Wildlife Photography | Tüm Hakları Saklıdır
+</footer>
+
+</body>
+</html>

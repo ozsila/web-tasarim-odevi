@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dövme Galerisi</title>
+<script>
+if (document.referrer === "") {
+        window.location.href = "login.html"; 
+    }
+</script>
+<link rel="stylesheet" href="dovme.css">
+</head>
+
+<body>
+
+<header>
+    <h1>🖋️ Dövme Galerisi</h1>
+</header>
+
+<section class="controls">
+
+    <input type="text" id="searchInput" placeholder="Dövme ara...">
+
+    <select id="category">
+        <option value="tattoo">Tümü</option>
+        <option value="minimal tattoo">Minimalist</option>
+        <option value="anime tattoo">Anime</option>
+        <option value="dragon tattoo">Dragon</option>
+        <option value="tribal tattoo">Tribal</option>
+        <option value="skull tattoo">Kuru Kafa</option>
+        <option value="japanese tattoo">Japon</option>
+        <option value="blackwork tattoo">Blackwork</option>
+    </select>
+
+    <button onclick="searchTattoos()">Ara</button>
+
+</section>
+
+<main>
+
+    <h2>Galeri</h2>
+    <div id="gallery" class="gallery"></div>
+
+    <h2>⭐ Favoriler</h2>
+    <div id="favorites" class="gallery"></div>
+
+</main>
+
+<script src="dovme.js"></script>
+
+</body>
+</html>

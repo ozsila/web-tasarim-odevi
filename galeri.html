@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Atölyesi | Dijital Portföy</title>
+
+    <script>
+        // Eğer doğrudan bu sayfaya gelmeye çalışırsa giriş sayfasına atar
+        // Not: Bu gerçek bir güvenlik değildir, sadece basit bir yönlendirmedir.
+        if (document.referrer === "") {
+            window.location.href = "login.html";
+        }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+            url('girisarkası.jpg');
+
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 255, 255);
+            padding: 100px 0;
+        }
+
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                SANAT<span class="text-warning">EVİ</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeri">Galeri</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hakkimizda">Hakkımızda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#iletisim">İletişim</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Yaratıcılığın Sınırı Yoktur</h1>
+            <p class="lead">Klasik dokunuşlardan modern dijital sanatlara kadar her şey burada.</p>
+            <a href="#galeri" class="btn btn-warning btn-lg">Eserleri Keşfet</a>
+        </div>
+    </header>
+
+    <section id="galeri" class="py-5 bg-black text-white">
+        <div class="container">
+
+            <h2 class="text-center mb-5">Sanat Galerisi</h2>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="Ataturk.html">
+                            <img src="AtatürkGiriş.jpg" class="card-img-top" alt="Tablo 1">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">ATATÜRK</h5>
+                            <p class="card-text">
+                                Türkiye Cumhuriyeti Kurucusu ve Türklerin Babası
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="VanGogh.html">
+                            <img src="VanGogh4.jpg" class="card-img-top" alt="Tablo 2">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Vincent van Gogh</h5>
+                            <p class="card-text">post-empresyonist ressam</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="doga.html">
+                            <img src="dogagiris.jpg" class="card-img-top" alt="Tablo 3">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Sessiz Doğa</h5>
+                            <p class="card-text">Dijital illüstrasyon.</p>
+                        </div>
+
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="anime.html">
+                            <img src="animegiriş.jpg" class="card-img-top" alt="Tablo 1">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">ANİME</h5>
+                            <p class="card-text">
+                                Anime fanartlarını ve wallpaperlarını bulabilirsiniz
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="hayvan.html">
+                            <img src="hayvangiris.jpeg" class="card-img-top" alt="Tablo 2">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">VAHŞİ YAŞAM GALERİSİ</h5>
+                            <p class="card-text">Her türden canlıların fotoğrafları </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="müzik.html">
+                            <img src="MüzikGiris.jpg" class="card-img-top" alt="Tablo 3">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Müzik</h5>
+                            <p class="card-text">Sanat sanat içindir.</p>
+                        </div>
+
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="card shadow-sm">
+
+                        <a href="dovme.html">
+                            <img src="dovmegiris.jpg" class="card-img-top" alt="Tablo 1">
+                        </a>
+
+                        <div class="card-body">
+                            <h5 class="card-title">Dövme Modelleri</h5>
+                            <p class="card-text">
+                                En güzel tuval bedenimizdir.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="iletisim" class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-2">©️ 2026 Sanat Evi Atölyesi. Tüm Hakları Saklıdır.</p>
+
+            <div>
+                <a href="#" class="text-warning text-decoration-none mx-2">Instagram</a>
+                <a href="#" class="text-warning text-decoration-none mx-2">Twitter</a>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanat Galerisi | Giriş</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* Arka plan görseli ayarları */
+            background-image: url('arkaplan.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Sayfa kaydırılsa bile resim sabit kalır */
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+        }
+
+        /* Giriş kartını biraz şeffaf yaparak arkadaki resmi hafifçe hissettirelim */
+        .login-card {
+            width: 100%;
+            max-width: 400px;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+            background-image: url('arkaplan2.jpg');
+            backdrop-filter: blur(5px); /* Arkadaki resmi hafif bulanıklaştırır (modern efekt) */
+        }
+
+        .btn-dark {
+            background-color: #1a252f;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-dark:hover {
+            background-color: #ffc107;
+            transform: translateY(-2px);
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="login-card text-center">
+        <h2 class="text-warning">Sanat Galerisi</h2>
+        <p class="text-warning">Sanat dolu dünyaya giriş yapın</p>
+        
+        <form id="loginForm">
+            <div class="mb-3 text-start">
+                <label class="form-label fw-semibold">Kullanıcı Adı</label>
+                <input type="text" id="username" class="form-control form-control-lg" placeholder="Kullanıcı Adı" required>
+            </div>
+            <div class="mb-4 text-start">
+                <label class="form-label fw-semibold">Şifre</label>
+                <input type="password" id="password" class="form-control form-control-lg" placeholder="Şifre" required>
+            </div>
+            <button type="submit" class="btn btn-dark w-100 py-2 fs-5">Giriş Yap</button>
+        </form>
+
+        <div id="errorMsg" class="alert alert-danger mt-3 d-none small">Giriş bilgileri hatalı!</div>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const user = document.getElementById('username').value;
+            const pass = document.getElementById('password').value;
+
+            if (user === 'Ronaldo' && pass === 'VanGogh') {
+                window.location.href = "galeri.html";
+            } else {
+                const err = document.getElementById('errorMsg');
+                err.classList.remove('d-none');
+                // Hata mesajını 3 saniye sonra gizle
+                setTimeout(() => err.classList.add('d-none'), 3000);
+            }
+        });
+    </script>
+
+</body>
+</html>
